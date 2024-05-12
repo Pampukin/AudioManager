@@ -1,7 +1,7 @@
 # AudioManager
 
 ### BGM
-BGM_AudioManager.Instance.PlayBMG("BGB_Name");
+BGM_AudioManager.Instance.PlayBGM("BGB_Name");
 
 BGM_AudioManager.Instance.Stop();
 
