@@ -1,30 +1,33 @@
 using JetBrains.Annotations;
 using UnityEngine;
 
-public class BGM_AudioManager : AbstractAudioManager
+namespace AudioManager
 {
-    private static BGM_AudioManager _instance;
-    
-    [CanBeNull]
-    public static BGM_AudioManager Instance => _instance;
-    
-    protected override void Awake()
+    public class BGM_AudioManager : AbstractAudioManager
     {
-        base.Awake();
-        
-        if (_instance == null)
+        private static BGM_AudioManager _instance;
+
+        [CanBeNull]
+        public static BGM_AudioManager Instance => _instance;
+
+        protected override void Awake()
         {
-            _instance = this;
+            base.Awake();
+
+            if (_instance == null)
+            {
+                _instance = this;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
-        else
+
+        public void PlayBGM(string key)
         {
-            Destroy(gameObject);
+            _audioSource.clip = _soundClips.AudioDictionary[key];
+            _audioSource.Play();
         }
-    }
-    
-    public void PlayBGM(string key)
-    {
-        _audioSource.clip = _soundClips.AudioDictionary[key];
-        _audioSource.Play();
     }
 }

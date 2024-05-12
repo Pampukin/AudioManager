@@ -1,10 +1,12 @@
-using UnityEngine;
-
-public class MasterSlider : AbstractSlider
+namespace AudioManager
 {
-    protected override void Start()
+    public class MasterSlider : AbstractSlider
     {
-        _dataName = "Master";
-        base.Start();
+        protected override void Start()
+        {
+            _dataName = "Master";
+            base.Start();
+        }
     }
 }
+

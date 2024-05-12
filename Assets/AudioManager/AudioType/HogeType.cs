@@ -1,7 +1,10 @@
 ﻿// AbstractSoundClips.csで生成
 
 /// <summary> AudioType </summary>
-public enum HogeType
+namespace AudioManager
 {
+	public enum HogeType
+	{
 	jump1,
+	}
 }

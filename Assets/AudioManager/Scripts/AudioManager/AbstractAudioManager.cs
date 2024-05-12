@@ -1,19 +1,23 @@
 using UnityEngine;
 
-public abstract class AbstractAudioManager : MonoBehaviour
+namespace AudioManager
 {
-    [SerializeField]
-    protected SoundClips _soundClips;
-
-    protected AudioSource _audioSource;
-
-    protected virtual void Awake()
+    public abstract class AbstractAudioManager : MonoBehaviour
     {
-        _audioSource = this.GetComponent<AudioSource>();
-    }
+        [SerializeField]
+        protected SoundClips _soundClips;
+
+        protected AudioSource _audioSource;
+
+        protected virtual void Awake()
+        {
+            _audioSource = this.GetComponent<AudioSource>();
+        }
     
-    public void Stop()
-    {
-        _audioSource.Stop();
+        public void Stop()
+        {
+            _audioSource.Stop();
+        }
     }
 }
+

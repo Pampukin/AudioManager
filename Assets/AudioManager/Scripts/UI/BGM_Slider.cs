@@ -1,11 +1,12 @@
-using System;
-using UnityEngine;
-
-public class BGM_Slider : AbstractSlider
+namespace AudioManager
 {
-    protected override void Start()
+    public class BGM_Slider : AbstractSlider
     {
-        _dataName = "BGM";
-        base.Start();
+        protected override void Start()
+        {
+            _dataName = "BGM";
+            base.Start();
+        }
     }
 }
+

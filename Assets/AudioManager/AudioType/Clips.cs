@@ -1,9 +1,12 @@
 ﻿// AbstractSoundClips.csで生成
 
 /// <summary> AudioType </summary>
-public enum Clips
+namespace AudioManager
 {
+	public enum Clips
+	{
 	Alpha_Dance,
 	Drumming_Sticks,
 	jump1,
+	}
 }
