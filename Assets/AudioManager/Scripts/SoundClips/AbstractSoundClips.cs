@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
 using UnityEngine;
 
@@ -31,13 +30,13 @@ public abstract class AbstractSoundClips : ScriptableObject
         }
     }
 
-    protected void CreateAudioType(string script)
+    protected void CreateAudioType(string type)
     {
         // コード生成
         List<string> writeCodes = new List<string>();
         writeCodes.Add("// AbstractSoundClips.csで生成\n");
         writeCodes.Add("/// <summary> AudioType </summary>");
-        writeCodes.Add($"public enum {script}");
+        writeCodes.Add($"public enum {type}");
         writeCodes.Add("{");
         // シーン一覧からシーン名と状態を取得
         foreach (var key in _audioDictionary.Keys)
@@ -47,7 +46,7 @@ public abstract class AbstractSoundClips : ScriptableObject
 
         writeCodes.Add("}");
         // 生成
-        string filePath = Application.dataPath + $"/AudioManager/AudioType/{script}.cs";
+        string filePath = Application.dataPath + $"/AudioManager/AudioType/{type}.cs";
         
         if (File.Exists(filePath))
         {

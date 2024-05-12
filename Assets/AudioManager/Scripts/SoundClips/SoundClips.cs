@@ -1,16 +1,12 @@
 using UnityEngine;
 
-public class SoundClips : MonoBehaviour
+[CreateAssetMenu(fileName = "Clips", menuName = "Scriptable Objects/AudioClips/SoundClips")]
+public class SoundClips : AbstractSoundClips
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected override void OnValidate()
     {
-        
-    }
+        base.OnValidate();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        CreateAudioType(this.name);
     }
 }
