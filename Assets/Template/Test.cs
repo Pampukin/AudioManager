@@ -9,6 +9,10 @@ public class Test : MonoBehaviour
     [SerializeField]
     private BGM_Clips _bgmClip;
     private string _bgmName => _bgmClip.ToString();
+    
+    [SerializeField]
+    private HogeType _hogeClip;
+    private string _hogeName => _hogeClip.ToString();
 
     
     
@@ -16,8 +20,7 @@ public class Test : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.S))
         {
-            Debug.Log("PlayBMG");
-            BGM_AudioManager.Instance?.PlayBMG(_bgmName);
+            BGM_AudioManager.Instance?.PlayBGM(_bgmName);
         }
         
         if (Input.GetKeyDown(KeyCode.T))

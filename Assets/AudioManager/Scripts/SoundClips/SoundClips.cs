@@ -3,7 +3,7 @@ using System.IO;
 using System.Text;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Clips", menuName = "Scriptable Objects/AudioClips/SoundClips")]
+[CreateAssetMenu(fileName = "Clips", menuName = "Scriptable Objects/SoundClips")]
 public class SoundClips : ScriptableObject
 {
     [SerializeField]
