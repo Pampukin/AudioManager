@@ -1,11 +1,11 @@
 ﻿// AbstractSoundClips.csで生成
 
-/// <summary> AudioType </summary>
 namespace AudioManager
 {
+	/// <summary> AudioType </summary>
 	public enum SE_Clips
 	{
-	jump1,
-	lose1,
+		jump1,
+		lose1,
 	}
 }

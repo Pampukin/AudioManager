@@ -11,6 +11,7 @@ namespace AudioManager
 
         protected virtual void Awake()
         {
+            _soundClips.Init();
             _audioSource = this.GetComponent<AudioSource>();
         }
     

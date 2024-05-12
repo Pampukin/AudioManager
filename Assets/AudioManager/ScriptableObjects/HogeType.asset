@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: HogeType
   m_EditorClassIdentifier: 
   _audioClips:
+  - {fileID: 8300000, guid: eadc5905157b883439a198af1e0cabb9, type: 3}
+  - {fileID: 8300000, guid: eadc5905157b883439a198af1e0cabb9, type: 3}
+  - {fileID: 8300000, guid: ebb2412e3c43f044faf51cb9236d9416, type: 3}
+  - {fileID: 8300000, guid: ebb2412e3c43f044faf51cb9236d9416, type: 3}
   - {fileID: 8300000, guid: ebb2412e3c43f044faf51cb9236d9416, type: 3}

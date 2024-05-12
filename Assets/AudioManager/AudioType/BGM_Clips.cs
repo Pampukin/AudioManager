@@ -1,11 +1,11 @@
 ﻿// AbstractSoundClips.csで生成
 
-/// <summary> AudioType </summary>
 namespace AudioManager
 {
+	/// <summary> AudioType </summary>
 	public enum BGM_Clips
 	{
-	Alpha_Dance,
-	Drumming_Sticks,
+		Alpha_Dance,
+		Drumming_Sticks,
 	}
 }

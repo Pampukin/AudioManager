@@ -1,10 +1,11 @@
 ﻿// AbstractSoundClips.csで生成
 
-/// <summary> AudioType </summary>
 namespace AudioManager
 {
+	/// <summary> AudioType </summary>
 	public enum HogeType
 	{
-	jump1,
+		Alpha_Dance,
+		jump1,
 	}
 }
