@@ -1,5 +1,7 @@
 # AudioManager
 
+add Sound to BGM_Clips or SE_Clips
+
 ### BGM
 BGM_AudioManager.Instance.PlayBGM("BGB_Name");
 
