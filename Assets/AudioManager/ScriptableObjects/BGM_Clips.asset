@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7ce11cffbc1e2d4e9a401711a2dcdfe, type: 3}
+  m_Script: {fileID: 11500000, guid: d42451b72c24e9c48a9df20bc83a2e6f, type: 3}
   m_Name: BGM_Clips
   m_EditorClassIdentifier: 
   _audioClips:

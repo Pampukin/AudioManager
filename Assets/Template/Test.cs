@@ -3,12 +3,12 @@ using UnityEngine;
 public class Test : MonoBehaviour
 {
     [SerializeField]
-    private SE_Types _seType;
-    private string _seName => _seType.ToString();
+    private SE_Clips _seClip;
+    private string _seName => _seClip.ToString();
     
     [SerializeField]
-    private BGM_Types _bgmType;
-    private string _bgmName => _bgmType.ToString();
+    private BGM_Clips _bgmClip;
+    private string _bgmName => _bgmClip.ToString();
 
     
     
