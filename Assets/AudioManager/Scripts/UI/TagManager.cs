@@ -5,6 +5,7 @@ namespace AudioManager
     public static class TagManager
     {
         public static void AddTag(string tagname) {
+#if UNITY_EDITOR
             UnityEngine.Object[] asset = AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/TagManager.asset");
             if ((asset != null) && (asset.Length > 0)) {
                 SerializedObject so = new SerializedObject(asset[0]);
@@ -22,6 +23,8 @@ namespace AudioManager
                 so.ApplyModifiedProperties();
                 so.Update();
             }
+#endif
+            
         }
     }
 }
