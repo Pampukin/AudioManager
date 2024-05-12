@@ -1,5 +1,7 @@
 # AudioManager
 
+add Sound to BGM_Clips or SE_Clips
+
 ### BGM
 BGM_AudioManager.Instance.PlayBGM("BGB_Name");
 
@@ -10,7 +12,7 @@ BGM_AudioManager.Instance.Stop();
 SE_AudioManager.Instance.PlayOneShot("SE_Name");
 
 # License
-Creative Commons Zero, CC0)
+Creative Commons Zero, CC0
 
 http://creativecommons.org/publicdomain/zero/1.0/
 
